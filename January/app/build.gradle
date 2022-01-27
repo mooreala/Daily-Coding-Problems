@@ -37,6 +37,9 @@ tasks.named('test') {
 task P394(type: JavaExec) {
   group 'easy'
   description 'Daily Coding Problem #394'
+
+  classpath = sourceSets.main.runtimeClasspath
+
   main = 'January.P394'
   standardInput = System.in
 }
