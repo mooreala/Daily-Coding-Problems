@@ -17,8 +17,7 @@ plugins {
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    jcenter()
-    mavenCenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -36,10 +35,20 @@ application {
 
 task P476(type: JavaExec) {
   group 'medium'
-  description 'Daily Coding Problem #475'
+  description 'Daily Coding Problem #476'
 
   classpath = sourceSets.main.runtimeClasspath
 
   main = 'February.P476'
+  standardInput = System.in
+}
+
+task P479(type: JavaExec) {
+  group 'medium'
+  description 'Daily Coding Problem #479'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'February.P479'
   standardInput = System.in
 }
