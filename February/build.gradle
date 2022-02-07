@@ -62,3 +62,13 @@ task P480(type: JavaExec) {
   main = 'February.P480'
   standardInput = System.in
 }
+
+task P481(type: JavaExec) {
+  group 'hard'
+  description 'Daily Coding Problem #481'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'February.P481'
+  standardInput = System.in
+}
